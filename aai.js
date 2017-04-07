@@ -46,15 +46,22 @@
           'country': '_all_',
           'entityID': 'https://idp.clarin.eu',
           'geo': {'lat': 51.833298, 'lon': 5.866699},
-          'title': 'Clarin.eu website account',
-          'weight': -999
+          'title': 'Clarin.eu website account (Old)',
+          'weight': -1001
+        });
+        djc.inlinemetadata.push({
+          'country': '_all_',
+          'entityID': 'https://idm.clarin.eu',
+          'geo': {'lat': 51.833298, 'lon': 5.866699},
+          'title': 'Clarin.eu website account (New)',
+          'weight': -1000
         });
         djc.inlinemetadata.push({
           'country': 'IT',
           'entityID': 'https://idem-idp.ilc.cnr.it/idp/shibboleth',
           'geo': {'lat': '43.718450', 'lon': '10.421310'},
           'title': 'CNR Institute for Computational Linguistics \"Antonio Zampolli\"',
-          'weight': -998
+          'weight': -999
         });
 
         if(opts.localauth) {
