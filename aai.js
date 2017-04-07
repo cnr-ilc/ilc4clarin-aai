@@ -47,14 +47,14 @@
           'entityID': 'https://idp.clarin.eu',
           'geo': {'lat': 51.833298, 'lon': 5.866699},
           'title': 'Clarin.eu website account (Old)',
-          'weight': -1001
+          'weight': -800
         });
         djc.inlinemetadata.push({
           'country': '_all_',
           'entityID': 'https://idm.clarin.eu',
           'geo': {'lat': 51.833298, 'lon': 5.866699},
           'title': 'Clarin.eu website account (New)',
-          'weight': -1000
+          'weight': -801
         });
         djc.inlinemetadata.push({
           'country': 'IT',
