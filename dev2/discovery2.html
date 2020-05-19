@@ -29,16 +29,16 @@
     <script type="text/javascript">
 
         $("document").ready(function() {
-		var title = "ILC for CLARIN-IT";
+		var title = "DEV2 ILC for CLARIN-IT";
 		var spentityid = "";//urlParams.entityID;
-		var responseUrl = window.location.protocol + '//dspace-clarin-it.ilc.cnr.it/aai/discojuiceDiscoveryResponse.html';
+		var responseUrl = window.location.protocol + '//dev2-clarin.ilc.cnr.it/aai/discojuiceDiscoveryResponse.html';
 		var feeds = [];
 		var returnTo = "";
 //		var djc = DiscoJuice.Hosted.getConfig(title,spentityid,responseUrl,feeds);
 var djc = DiscoJuice.Hosted.getConfig(
 	 "Example Showcase service",
-	 "https://dspace-clarin-it.ilc.cnr.it/Shibboleth.sso/metadata",
-	 "http://dspace-clarin-it.ilc.cnr.it/perl/shib_test.pl", ["edugain", "kalmar", "garr"], "http://dspace-clarin-it.ilc.cnr.it/login?idp="
+	 "https://dev2-clarin.ilc.cnr.it/Shibboleth.sso/metadata",
+	 "http://dev2-clarin.ilc.cnr.it/secure/shib_test.pl", ["edugain", "kalmar", "garr"], "http://dev2-clarin.ilc.cnr.it/login?idp="
 );
 		var host = "https://" + window.location.hostname;
 		var metadataFeed = host + "/repository/xmlui/discojuice/feeds"; 

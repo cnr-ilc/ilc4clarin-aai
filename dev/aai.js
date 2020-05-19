@@ -2,17 +2,17 @@
 (function(window){
   function AAI() {
     var host = 'https://' + window.location.hostname,
-        ourEntityID = host.match("dspace-clarin-it.ilc.cnr.it") ? "https://dspace-clarin-it.ilc.cnr.it" : host;
+        ourEntityID = host.match("dev-clarin.ilc.cnr.it") ? "https://dev-clarin.ilc.cnr.it" : host;
     this.defaults = {
 //      host : 'https://ufal-point.mff.cuni.cz',
       host : host, //better default (useful when testing on ufal-point-dev)
       // do not add protocol because an error will appear in the DJ dialog
       // if you see the error, your SP is not listed among djc trusted (edugain is enough to be trusted)
-      responseUrl: window.location.protocol + '//dspace-clarin-it.ilc.cnr.it/aai/discojuiceDiscoveryResponse.html',
+      responseUrl: window.location.protocol + '//dev-clarin.ilc.cnr.it/aai/discojuiceDiscoveryResponse.html',
       ourEntityID: ourEntityID + '/Shibboleth.sso/Metadata',
       serviceName: '',
-   //   metadataFeed: host + '/xmlui/discojuice/feeds',
-      metadataFeed: 'https://lindat.mff.cuni.cz/repository' + '/xmlui/discojuice/feeds',
+      metadataFeed: host + '/xmlui/discojuice/feeds',
+   //   metadataFeed: 'https://dev-clarin.ilc.cnr.it/repository' + '/xmlui/discojuice/feeds',
       selector: 'a.signon', // selector for login button
       autoInitialize: true // auto attach DiscoJuice to DOM
     };
